@@ -1,0 +1,11 @@
+# ImmPort-Galaxy
+# Required Python Packages
+numpy == 1.9.2
+matplotlib
+pandas == 0.18.0
+jinja2
+rpy2 < 2.9
+scipy == 0.17.0
+plotly == 1.12.9
+clustergrammer
+scikit-learn
