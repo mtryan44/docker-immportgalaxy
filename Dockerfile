@@ -80,7 +80,7 @@ RUN groupadd -r $GALAXY_USER -g $GALAXY_GID && \
     useradd -u $GALAXY_UID -r -g $GALAXY_USER -d $GALAXY_HOME -c "Galaxy user" $GALAXY_USER && \
 	git clone $GALAXY_REPO $GALAXY_HOME && \
 	chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_HOME && \
-	cp /tmp/config/galaxy.ini $GALAXY_CONFIG_FILE
+	cp /tmp/galaxy.ini $GALAXY_CONFIG_FILE
 
 	
 WORKDIR $GALAXY_HOME
