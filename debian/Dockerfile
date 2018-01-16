@@ -49,7 +49,7 @@ RUN apt-get -qq update && \
 	update-locale "${LANG}" 
 
 RUN	echo "deb http://cloud.r-project.org/bin/linux/debian/ stretch-cran34/" | tee -a /etc/apt/sources.list && \
-	apt-key adv --keyserver hkp://keys.gnupg.net:80 --recv-key E19F5F87128899B192B1A2C2AD5F960A256A04AF && \
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key E19F5F87128899B192B1A2C2AD5F960A256A04AF && \
 	apt-get -qq update && \
 	apt-get -qq -y --no-install-recommends install \
 		curl \
@@ -70,7 +70,6 @@ RUN	echo "deb http://cloud.r-project.org/bin/linux/debian/ stretch-cran34/" | te
 		python2.7 \
 		python-dev \
 		python-pip \
-		python-virtualenv \
 		r-base \
 		r-base-dev \
 		xorg-dev && \
