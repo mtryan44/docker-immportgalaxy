@@ -82,7 +82,7 @@ RUN	echo "deb http://cloud.r-project.org/bin/linux/debian/ stretch-cran34/" | te
 		/var/tmp/*
 
 # Add initialization and configuration files
-COPY ./src/ /tmp/
+COPY src/ /tmp/
 
 # Create GALAXY_USER
 # Retrieve the Galaxy source files (ImmPort-Galaxy 16.07)
