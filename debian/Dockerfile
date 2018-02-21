@@ -13,7 +13,7 @@
 
 FROM debian:9-slim
 
-LABEL name="infotechsoft/immport-galaxy" \
+LABEL name="mtryan44/immport-galaxy" \
 	release-date="2018-01-05" \
 	description="ImmPortGalaxy on Debian" \
 	immportgalaxy.url="https://github.com/ImmPortDB/immport-galaxy" \
