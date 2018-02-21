@@ -137,6 +137,7 @@ ENV DEBIAN_FRONTEND=newt
 	
 EXPOSE 8080
 USER $GALAXY_USER
+adduser $GALAXY_USER sudo
 
 # Initializes and starts up Galaxy
 CMD ["sh", "run.sh"]
